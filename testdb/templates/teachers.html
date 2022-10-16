@@ -1,0 +1,20 @@
+{% load static%}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  
+    <title></title>
+  </head>
+  <body>
+<h1>This is sample response</h1>
+
+{%for i in teacher%}
+<img src="{{i.pict.url}}" alt="{{i.name}}" width="100%" >
+
+<h2>{{i.name}}</h2>
+<p>{{i.age}}</p>
+
+{%endfor%}
+  </body>
+</html>
